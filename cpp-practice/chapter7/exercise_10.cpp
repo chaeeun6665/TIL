@@ -15,6 +15,10 @@ double sub(double x, double y);
 
 double calculate(double x, double y, double (*f1) (double, double));
 
+//add() 스타일의 다른 함수를 최소한 하나 더 사용하라.
+//사용자가 쌍을 이루는 두 수를 반복해서 입력할 수 있도록 루프를 사용한다.
+//각 쌍에 대하여, add() 함수와 add() 스타일의 다른 함수를 calculate() 함수를 사용하여 불러낸다.
+
 int main() {
     double num1, num2;
 
@@ -54,7 +58,3 @@ double sub(double x, double y) {
 double calculate(double x, double y, double (*f1) (double, double)) {
     return f1(x, y);
 }
-
-//add() 스타일의 다른 함수를 최소한 하나 더 사용하라.
-//사용자가 쌍을 이루는 두 수를 반복해서 입력할 수 있도록 루프를 사용한다.
-//각 쌍에 대하여, add() 함수와 add() 스타일의 다른 함수를 calculate() 함수를 사용하여 불러낸다.
